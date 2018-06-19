@@ -79,6 +79,23 @@
    
         var full = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
         console.log(full);
+        var data = null;
+        $.get(full + "/api/Account/getBalance/1", function (d) {
+            data = d;
+            //console.log(data);
+            var name = data.content.lwalle_UserInfo[0].name;
+            var sname = data.content.lwalle_UserInfo[0].surname;
+            var address = data.content.lwalle_UserInfo[0].address;
+            var id = data.content.lwalle_UserInfo[0].iD;
+
+            var no = data.content.lwalle_AccountInfo[0].no;
+            var balance = data.content.lwalle_AccountInfo[0].balance;
+
+            //$("#label_balance").html(balance);
+            //$("#label_id").html(no);
+            $("#address").html(name + " " + sname + "<br/>" + address);
+        });
+
         $("#btn_balance").click(function () {
 
             $("#main").load("views/balance.view.html", function () {
@@ -92,8 +109,8 @@
 
                 $("#label_status").text("สถานะล่าสุด :" + datetime);
 
-                $.get(full +"/api/Account/getBalance/1", function (data) {
-                    console.log(data);
+               // $.get(full +"/api/Account/getBalance/1", function (data) {
+               //     console.log(data);
                     var name = data.content.lwalle_UserInfo[0].name;
                     var sname = data.content.lwalle_UserInfo[0].surname;
                     var address = data.content.lwalle_UserInfo[0].address;
@@ -104,8 +121,9 @@
 
                     $("#label_balance").html(balance);
                     $("#label_id").html(no);
-                    $("#address").html(name + " " + sname + "<br/>" + address);
-                });
+
+                   // $("#address").html(name + " " + sname + "<br/>" + address);
+               // });
 
 
             });
@@ -117,16 +135,36 @@
 
             $("#main").load("views/tranfer.view.html", function () {
 
+                var no = data.content.lwalle_AccountInfo[0].no;
+                $("#label_id").text(no);
+               
+
+
+
                 $("#btn_ok").click(function () {
 
+                    //var no = data.content.lwalle_AccountInfo[0].no;
+                    //console.log(data);
+                    //console.log(no);
+                    //$("#label_id").text(no);
+                    var get_account_no_tranfer = $("#account_no_tranfer").val();
+                    var money = $("#balane_tranfer").val();
 
-                    $("#main").load("views/result.view.html", function () {
-
-
+                    $.get(full + "/api/Account/getTranfer/" + $("#label_id").text() + "/" + get_account_no_tranfer + "/" + money, function (d) {
+                        console.log(d);
                     });
 
 
+
+                   // $("#main").load("views/result.view.html", function () {
+
+                    //});
+
+
                 });
+
+               // http://localhost:58471/api/Account/getTranfer/123-456-789/234-567-890/1
+
                 $("#btn_cancel").click(function () {
 
                 });
