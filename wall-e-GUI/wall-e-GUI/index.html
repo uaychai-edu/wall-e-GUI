@@ -38,9 +38,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <!--<img src="images/mu_logo_eng.png" style="width: 178px; height: 45px" />
-                <h4>ระบบแบบฟอร์ม 2 ภาษา</h4>
-                <h6>(Bilingual Form)</h6>-->
+             <label id="address"></label>
             </div>
 
             <ul class="list-unstyled components">
@@ -94,9 +92,19 @@
 
                 $("#label_status").text("สถานะล่าสุด :" + datetime);
 
-                $.get("ajax/test.html", function (data) {
-                    $(".result").html(data);
-                    alert("Load was performed.");
+                $.get(full +"/api/Account/getBalance/1", function (data) {
+                    console.log(data);
+                    var name = data.content.lwalle_UserInfo[0].name;
+                    var sname = data.content.lwalle_UserInfo[0].surname;
+                    var address = data.content.lwalle_UserInfo[0].address;
+                    var id = data.content.lwalle_UserInfo[0].iD;
+
+                    var no = data.content.lwalle_AccountInfo[0].no;
+                    var balance = data.content.lwalle_AccountInfo[0].balance;
+
+                    $("#label_balance").html(balance);
+                    $("#label_id").html(no);
+                    $("#address").html(name + " " + sname + "<br/>" + address);
                 });
 
 
