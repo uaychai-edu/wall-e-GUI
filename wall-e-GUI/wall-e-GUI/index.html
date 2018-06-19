@@ -152,6 +152,17 @@
 
                     $.get(full + "/api/Account/getTranfer/" + $("#label_id").text() + "/" + get_account_no_tranfer + "/" + money, function (d) {
                         console.log(d);
+
+                        $("#main").load("views/result.view.html", function () {
+
+                            $("#label_account_no").text(d.content.accountNo.no + " (" + d.content.userInfo.name +")");
+                            $("#label_account_tranfer_no").text(d.content.accountNoTranfer.no + " (" + d.content.userInfoTran.name + ")");
+                            $("#label_money").text(d.content.money);
+
+
+                        });
+
+
                     });
 
 
