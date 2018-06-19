@@ -1,10 +1,92 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html lan="en" ng-app="app">
+
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+   
+    <title>MU wallet</title>
+ 
+    <link href="styles/side-bar.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 </head>
-<body>
+
+<body ng-cloak>
+
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!--<img src="images/mu_logo_eng.png" style="width: 178px; height: 45px" />
+                <h4>ระบบแบบฟอร์ม 2 ภาษา</h4>
+                <h6>(Bilingual Form)</h6>-->
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a id="btn_balance" href="#">เช็คยอดเงิน</a>
+                    <a id="btn_tranfer" href="#">โอนเงิน</a>
+                </li>
+
+            </ul>
+
+            <ul class="list-unstyled CTAs"></ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+               
+            </nav>
+
+            <!--<ol class="breadcrumb">
+                <li id="titleHeader" class="active">   </li>
+            </ol>-->
+
+        
+            <div id="main"></div>
+        </div>
+
+
+    </div>
+
+
+
+
 
 </body>
+
 </html>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        console.log("ready!");
+   
+
+        $("#btn_balance").click(function () {
+            $("#main").html("<div>test1</div>")
+        });
+
+        $("#btn_tranfer").click(function () {
+            $("#main").html("<div>test2</div>")
+        });
+
+       
+    });
+
+</script>

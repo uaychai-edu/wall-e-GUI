@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>ftp://bilingualform.qas.mahidol/bilingualform.qas</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app-controllers/approve_doc.controller.js">
+      <publishTime>05/12/2018 16:21:12</publishTime>
+    </File>
+    <File Include="app-controllers/approve_doc_filter.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-controllers/approve_doc_manage.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-controllers/home.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-controllers/list_doc_filter.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-controllers/list_doc_manage.controller.js">
+      <publishTime>06/14/2018 16:56:26</publishTime>
+    </File>
+    <File Include="app-controllers/login.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-controllers/upload_doc.controller.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-directives/checklist-model.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-directives/custom.directive.js">
+      <publishTime>05/11/2018 16:24:16</publishTime>
+    </File>
+    <File Include="app-directives/file.directive.js">
+      <publishTime>05/16/2018 11:33:22</publishTime>
+    </File>
+    <File Include="app-directives/NgTableDirective.directive.js">
+      <publishTime>05/11/2018 17:14:26</publishTime>
+    </File>
+    <File Include="app-directives/Pagination.directive.js">
+      <publishTime>03/28/2018 13:30:54</publishTime>
+    </File>
+    <File Include="app-filters/custom.filter.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/attachfile.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/authentication.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/date_format.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/fileReader.service.js">
+      <publishTime>05/08/2018 11:20:44</publishTime>
+    </File>
+    <File Include="app-services/fileUpload.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/form.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/form_status_process.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/http.custom.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/master_data.service.js">
+      <publishTime>05/11/2018 10:21:36</publishTime>
+    </File>
+    <File Include="app-services/menu.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/menu_dict.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/serialize_data.service.js">
+      <publishTime>05/11/2018 17:46:10</publishTime>
+    </File>
+    <File Include="app-services/user_permission.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-services/util.service.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-views/announcements.view.html">
+      <publishTime>05/10/2018 14:40:00</publishTime>
+    </File>
+    <File Include="app-views/approve_doc_filter.view.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-views/approve_doc_manage.view.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-views/home.view.html">
+      <publishTime>06/14/2018 16:56:26</publishTime>
+    </File>
+    <File Include="app-views/list_doc_filter.view.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-views/list_doc_manage.view.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app-views/login.view.html">
+      <publishTime>05/21/2018 17:52:44</publishTime>
+    </File>
+    <File Include="app-views/upload_doc.view.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app.config.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="app.js">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="bin/BilingualFormGui.dll">
+      <publishTime>06/14/2018 16:34:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 03:10:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="Content/ng-table.css">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="Content/ng-table.less">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="Content/ng-table.min.css">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-brands.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-brands.min.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-regular.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-regular.min.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-solid.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fa-solid.min.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fontawesome-all.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fontawesome-all.min.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fontawesome.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/css/fontawesome.min.css">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/fa-brands.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/fa-regular.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/fa-solid.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/fontawesome.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_animated.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_bordered-pulled.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_core.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_fixed-width.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_icons.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_larger.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_list.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_mixins.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_rotated-flipped.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_screen-reader.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_stacked.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/less/_variables.less">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/fa-brands.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/fa-regular.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/fa-solid.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/fontawesome.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_animated.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_bordered-pulled.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_core.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_fixed-width.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_icons.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_larger.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_list.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_mixins.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_rotated-flipped.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_screen-reader.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_stacked.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/scss/_variables.scss">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-brands-400.eot">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-brands-400.svg">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-brands-400.ttf">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-brands-400.woff">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-brands-400.woff2">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-regular-400.eot">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-regular-400.svg">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-regular-400.ttf">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-regular-400.woff">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-regular-400.woff2">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-solid-900.eot">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-solid-900.svg">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-solid-900.ttf">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-solid-900.woff">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Content/web-fonts-with-css/webfonts/fa-solid-900.woff2">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="home.aspx">
+      <publishTime>04/24/2018 16:57:26</publishTime>
+    </File>
+    <File Include="images/BGHeader.png">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/curve_line.png">
+      <publishTime>04/03/2018 15:59:56</publishTime>
+    </File>
+    <File Include="images/iCheckMinimal.png">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/Label.png">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/MUIcon.png">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/MU_LOGO.jpg">
+      <publishTime>04/02/2018 17:05:58</publishTime>
+    </File>
+    <File Include="images/mu_logo_eng.png">
+      <publishTime>04/03/2018 15:16:36</publishTime>
+    </File>
+    <File Include="images/Preloading.gif">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/PreloadingInline.gif">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/thai.png">
+      <publishTime>04/30/2018 15:59:34</publishTime>
+    </File>
+    <File Include="images/Untitled-1.psd">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/Untitled-2.psd">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="images/usa.png">
+      <publishTime>04/30/2018 14:00:30</publishTime>
+    </File>
+    <File Include="images/UserIcon.png">
+      <publishTime>03/28/2018 13:34:16</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="index3.html">
+      <publishTime>05/11/2018 22:02:48</publishTime>
+    </File>
+    <File Include="index4.html">
+      <publishTime>04/25/2018 15:39:44</publishTime>
+    </File>
+    <File Include="index5.html">
+      <publishTime>05/15/2018 15:19:54</publishTime>
+    </File>
+    <File Include="language/lang_EN.json">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="language/lang_TH.json">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/AppUtil.service.js">
+      <publishTime>04/04/2018 12:23:30</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/Authen.service.js">
+      <publishTime>04/02/2018 15:25:32</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/Autosize.js">
+      <publishTime>03/28/2018 13:30:06</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/Dictionary.service.js">
+      <publishTime>03/28/2018 13:30:30</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/iUtil.service.js">
+      <publishTime>03/28/2018 13:30:14</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/MenuRoute.service.js">
+      <publishTime>03/28/2018 13:30:46</publishTime>
+    </File>
+    <File Include="lib_form_FlexTime/ModalUser.service.js">
+      <publishTime>03/28/2018 13:31:26</publishTime>
+    </File>
+    <File Include="main.html">
+      <publishTime>05/11/2018 18:59:14</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/14/2018 16:29:23</publishTime>
+    </File>
+    <File Include="Scripts/ng-table.js">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="Scripts/ng-table.min.js">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="Scripts/ng-table.min.js.map">
+      <publishTime>05/15/2018 17:51:00</publishTime>
+    </File>
+    <File Include="styles/CSS.css">
+      <publishTime>03/30/2018 14:47:48</publishTime>
+    </File>
+    <File Include="styles/iUtil.css">
+      <publishTime>03/30/2018 14:47:48</publishTime>
+    </File>
+    <File Include="styles/side-bar.css">
+      <publishTime>05/10/2018 14:05:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/14/2018 16:34:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
