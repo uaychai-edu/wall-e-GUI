@@ -17,6 +17,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
 <body ng-cloak>
@@ -46,18 +56,10 @@
         </nav>
 
         <!-- Page Content Holder -->
-        <div id="content">
+        <div id="content" style="padding:20px">
 
-            <nav class="navbar navbar-default">
-               
-            </nav>
-
-            <!--<ol class="breadcrumb">
-                <li id="titleHeader" class="active">   </li>
-            </ol>-->
-
-        
             <div id="main"></div>
+       
         </div>
 
 
@@ -79,11 +81,48 @@
    
 
         $("#btn_balance").click(function () {
-            $("#main").html("<div>test1</div>")
+
+            $("#main").load("views/balance.view.html", function () {
+                var currentdate = new Date();
+                var datetime =  currentdate.getDate() + "/"
+                    + (currentdate.getMonth() + 1) + "/"
+                    + currentdate.getFullYear() + " "
+                    + currentdate.getHours() + ":"
+                    + currentdate.getMinutes() + ":"
+                    + currentdate.getSeconds();
+
+                $("#label_status").text("สถานะล่าสุด :" + datetime);
+
+                $.get("ajax/test.html", function (data) {
+                    $(".result").html(data);
+                    alert("Load was performed.");
+                });
+
+
+            });
+
         });
 
+
         $("#btn_tranfer").click(function () {
-            $("#main").html("<div>test2</div>")
+
+            $("#main").load("views/tranfer.view.html", function () {
+
+                $("#btn_ok").click(function () {
+
+
+                    $("#main").load("views/result.view.html", function () {
+
+
+                    });
+
+
+                });
+                $("#btn_cancel").click(function () {
+
+                });
+
+            });
         });
 
        
